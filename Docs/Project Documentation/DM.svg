@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="576px" preserveAspectRatio="none" style="width:500px;height:576px;background:#FFFFFF;" version="1.1" viewBox="0 0 500 576" width="500px" zoomAndPan="magnify"><defs/><g><!--MD5=[964f074a2dd77d134c21b891bb53e381]
+class Image--><g id="elem_Image"><rect codeLine="6" fill="#F1F1F1" height="83.9531" id="Image" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="75" x="7" y="262.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="42" x="23.5" y="281.0352">Image</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="81" y1="288.9883" y2="288.9883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="13" y="306.5234">-idImage</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="13" y="323.0117">-SKU</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="39" x="13" y="339.5">-path</text></g><!--MD5=[72136138052d025cffdce3c22fbd185f]
+class Product--><g id="elem_Product"><rect codeLine="12" fill="#F1F1F1" height="100.4414" id="Product" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="97" x="104" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="126" y="25.5352">Product</text><line style="stroke:#181818;stroke-width:0.5;" x1="105" x2="200" y1="33.4883" y2="33.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="110" y="51.0234">-name</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="110" y="67.5117">-description</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="110" y="84">-SKU</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="110" y="100.4883">-barCode</text></g><!--MD5=[e2feeb2447a96ad645c4dc15fb2b3d5e]
+class AggregationRatings--><g id="elem_AggregationRatings"><rect codeLine="19" fill="#F1F1F1" height="50.9766" id="AggregationRatings" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="143" x="125" y="510"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="128" y="528.5352">AggregationRatings</text><line style="stroke:#181818;stroke-width:0.5;" x1="126" x2="267" y1="536.4883" y2="536.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106" x="131" y="554.0234">-averageRating</text></g><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><g id="elem_User"><rect codeLine="23" fill="#F1F1F1" height="100.4414" id="User" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="64" x="360.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="377" y="25.5352">User</text><line style="stroke:#181818;stroke-width:0.5;" x1="361.5" x2="423.5" y1="33.4883" y2="33.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52" x="366.5" y="51.0234">-idUser</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="366.5" y="67.5117">-name</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="39" x="366.5" y="84">-pass</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="366.5" y="100.4883">-type</text></g><!--MD5=[eb0e8f8ddfdc21c3fdb48447501fec67]
+class Review--><g id="elem_Review"><rect codeLine="30" fill="#F1F1F1" height="116.9297" id="Review" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="80" x="256.5" y="246"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="273" y="264.5352">Review</text><line style="stroke:#181818;stroke-width:0.5;" x1="257.5" x2="335.5" y1="272.4883" y2="272.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="262.5" y="290.0234">-idReview</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="262.5" y="306.5117">-status</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="262.5" y="323">-text</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="262.5" y="339.4883">-rating</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="39" x="262.5" y="355.9766">-Date</text></g><!--MD5=[6987bc66bd8845192e2addfb47d98466]
+class Vote--><g id="elem_Vote"><rect codeLine="38" fill="#F1F1F1" height="67.4648" id="Vote" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="64" x="360.5" y="502"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="377" y="520.5352">Vote</text><line style="stroke:#181818;stroke-width:0.5;" x1="361.5" x2="423.5" y1="528.4883" y2="528.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52" x="366.5" y="546.0234">-idVote</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="366.5" y="562.5117">-vote</text></g><!--MD5=[6415063213547b35a52066d7b53eb916]
+link User to Review--><g id="link_User_Review"><path codeLine="43" d="M373.3,107.09 C357.65,147.11 335.52,203.71 319.04,245.87 " fill="none" id="User-Review" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#000000" points="355.3207,171.9985,349.2899,179.3525,354.7642,181.4928,355.3207,171.9985" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22" x="362.5" y="181.5684">has</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="361.8925" y="128.1073">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="6" x="315.4214" y="235.402">*</text></g><!--MD5=[418687281c593c8dd812c04f2d15bfcd]
+link Product to Review--><g id="link_Product_Review"><path codeLine="44" d="M181.29,107.09 C204.77,147.11 237.96,203.71 262.7,245.87 " fill="none" id="Product-Review" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#000000" points="235.0299,180.968,232.9882,171.6792,227.9183,174.6532,235.0299,180.968" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22" x="241.5" y="181.5684">has</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="6" x="179.0779" y="128.1073">*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="6" x="252.215" y="235.402">*</text></g><!--MD5=[8aec1ae024e878ba2e82131655d795ee]
+link Product to AggregationRatings--><g id="link_Product_AggregationRatings"><path codeLine="45" d="M152.5,107.17 C152.5,128.21 152.5,153.06 152.5,175.5 C152.5,175.5 152.5,175.5 152.5,433.5 C152.5,461.23 166.62,489.95 178.86,509.64 " fill="none" id="Product-AggregationRatings" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#000000" points="157.8268,309.6446,160.1683,300.4268,154.303,300.8109,157.8268,309.6446" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22" x="166.5" y="309.5684">has</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="143.9375" y="127.839">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="165.5853" y="499.1176">1</text></g><!--MD5=[96634367e53772686d2368e0199d06a1]
+link Review to AggregationRatings--><g id="link_Review_AggregationRatings"><path codeLine="46" d="M271.27,363.29 C250.61,410.59 222.41,475.17 207.23,509.93 " fill="none" id="Review-AggregationRatings" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#000000" points="245.4989,437.2374,251.8122,430.1245,246.4256,427.7721,245.4989,437.2374" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22" x="256.5" y="437.5684">has</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="6" x="262.0059" y="383.5452">*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="200.9546" y="499.067">1</text></g><!--MD5=[d5b75c24e88a5b261b39334b7343a232]
+link Review to Vote--><g id="link_Review_Vote"><path codeLine="47" d="M320.72,363.29 C339.11,407.14 363.72,465.85 378.83,501.88 " fill="none" id="Review-Vote" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#000000" points="358.4334,437.2663,357.6462,427.7884,352.2255,430.0613,358.4334,437.2663" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22" x="365.5" y="437.5684">has</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="315.0579" y="383.5452">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="367.3512" y="491.3377">1</text></g><!--MD5=[b972b8ea74971fd98de63feae9468eca]
+link User to Vote--><g id="link_User_Vote"><path codeLine="48" d="M420.36,107.04 C429.56,127.54 437.5,152.02 437.5,175.5 C437.5,175.5 437.5,175.5 437.5,433.5 C437.5,457.88 426.43,482.93 415.26,501.98 " fill="none" id="User-Vote" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#000000" points="442.4354,309.6549,445.4909,300.6485,439.6136,300.5726,442.4354,309.6549" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="41" x="451.5" y="309.5684">makes</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="415.8644" y="128.0499">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="411.1293" y="491.0721">1</text></g><!--MD5=[36b69398912f1cff2510a1764d3175d7]
+link Product to Image--><g id="link_Product_Image"><path codeLine="49" d="M121.64,107.01 C110.64,125.67 98.71,147.41 89.5,168 C75.74,198.78 63.9,235.09 55.82,262.38 " fill="none" id="Product-Image" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#000000" points="92.5496,181.2592,98.784,174.077,93.3718,171.7842,92.5496,181.2592" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22" x="103.5" y="181.5684">has</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="6" x="110.6668" y="128.0155">*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="6" x="51.198" y="251.7596">*</text></g><!--MD5=[d4d38d3281aa60e019e2f0484e5bafb9]
+@startuml
+'https://plantuml.com/class-diagram
+skinparam classAttributeIconSize 0
+hide circle
+hide methods
+
+class Image {
+    - idImage
+    - SKU
+    - path
+}
+
+class Product {
+    - name
+    - description
+    - SKU
+    - barCode
+}
+
+class AggregationRatings{
+     - averageRating
+}
+
+class User {
+    - idUser
+    - name
+    - pass
+    - type
+}
+
+class Review {
+    - idReview
+    - status
+    - text
+    - rating
+    - Date
+}
+
+class Vote {
+    - idVote
+    - vote
+}
+
+User "1" - - - "*" Review:  has <
+Product "*" - - - "*" Review:  has >
+Product "1" - - - "1" AggregationRatings: has >
+Review "*" - - - "1" AggregationRatings: has >
+Review "1" - - - "1" Vote: has >
+User "1" - - - "1" Vote: makes >
+Product "*" - - - "*" Image: has >
+
+
+
+@enduml
+
+@startuml
+skinparam classAttributeIconSize 0
+hide circle
+hide methods
+
+class Image {
+    - idImage
+    - SKU
+    - path
+}
+
+class Product {
+    - name
+    - description
+    - SKU
+    - barCode
+}
+
+class AggregationRatings{
+     - averageRating
+}
+
+class User {
+    - idUser
+    - name
+    - pass
+    - type
+}
+
+class Review {
+    - idReview
+    - status
+    - text
+    - rating
+    - Date
+}
+
+class Vote {
+    - idVote
+    - vote
+}
+
+User "1" - - - "*" Review:  has <
+Product "*" - - - "*" Review:  has >
+Product "1" - - - "1" AggregationRatings: has >
+Review "*" - - - "1" AggregationRatings: has >
+Review "1" - - - "1" Vote: has >
+User "1" - - - "1" Vote: makes >
+Product "*" - - - "*" Image: has >
+
+
+
+@enduml
+
+PlantUML version 1.2022.4(Sat Apr 09 14:29:17 WEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: pt
+Country: PT
+--></g></svg>

@@ -1,0 +1,55 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autoactivate on
+autonumber
+
+actor "Client" as Client
+participant "ProductController" as Ctrl
+participant "productService:ProductService" as Svc
+participant "productRepository:ProductRepository" as Repo
+participant "product:Product" as product
+participant "aggregateRating:AggregateRating" as aggregateRating
+
+activate Client
+
+Client -> Ctrl : GET/products/{sku}/rating
+Ctrl -> Svc : productService.findAllRates(sku)
+Svc -> Repo: productRepository.findBySkuProduct(sku)
+Repo --> Svc: product
+Svc -> Svc: list = product.getReviews()
+loop for each "review" in list
+    Svc -> product: review.getRating()
+    product --> Svc: rating
+    alt rating >= 0 && rating < 0.5
+    Svc -> Svc: count0++
+    else rating >= 0.5 && rating < 1.5
+    Svc -> Svc: count1++
+    else rating >= 1.5 && rating < 2.5
+    Svc -> Svc: count2++
+    else rating >= 2.5 && rating < 3.5
+    Svc -> Svc: count3++
+    else rating >= 3.5 && rating < 4.5
+    Svc -> Svc: count4++
+    else rating >= 4.5 && rating <= 5
+    Svc -> Svc: count5++
+    end
+    Svc -> Svc: soma+=rating
+    end loop
+
+    Svc -> Svc: frequency0 = ((float) count0) / list.size() * 100
+    Svc -> Svc: frequency1 = ((float) count1) / list.size() * 100
+    Svc -> Svc: frequency2 = ((float) count2) / list.size() * 100
+    Svc -> Svc: frequency3 = ((float) count3) / list.size() * 100
+    Svc -> Svc: frequency4 = ((float) count4) / list.size() * 100
+    Svc -> Svc: frequency5 = ((float) count5) / list.size() * 100
+    Svc -> Svc: average = soma / list.size();
+    Svc -> aggregateRating**: new AggregateRating(sku, average, count0, count1, count2, count3, count4, count5, frequency0, frequency1, frequency2, frequency3, frequency4, frequency5);
+    aggregateRating --> Svc: aggregateRating
+    Svc --> Ctrl: aggregateRating
+    Ctrl --> Client: aggregateRating
+
+
+
+
+@enduml

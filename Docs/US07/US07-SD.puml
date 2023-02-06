@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+autoactivate on
+autonumber
+
+actor "Client" as User
+participant "ReviewController" as Ctrl
+participant "reviewService:ReviewService" as service
+participant "reviewRepositoryReviewRepository" as repo
+
+
+
+
+activate User
+User -> Ctrl : DELETE review/{idReview}
+Ctrl -> service : reviewService.deleteById(idReview)
+service -> repo : reviewRepository.findByIdReview(idReview)
+repo --> service: review
+alt review.getVotes().isEmpty() == true
+service -> repo : reviewRepository.delete(review);
+end
+repo --> service: ok
+service --> Ctrl: ok
+Ctrl --> User: ok
+
+
+
+@enduml

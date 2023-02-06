@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autoactivate on
+autonumber
+
+actor "Client" as user
+participant "API" as System
+
+activate user
+
+user -> System: GET /votes/{sku}
+user <-- System: returns product reviews
+
+
+
+@enduml

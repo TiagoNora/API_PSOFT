@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="560px" preserveAspectRatio="none" style="width:577px;height:560px;background:#FFFFFF;" version="1.1" viewBox="0 0 577 560" width="577px" zoomAndPan="magnify"><defs/><g><!--MD5=[ee6344d516906ecc8b439ac61d539e0d]
+class ReviewController--><g id="elem_ReviewController"><rect codeLine="7" fill="#F1F1F1" height="58.9766" id="ReviewController" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="261" x="148.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="220.5" y="25.5352">ReviewController</text><line style="stroke:#181818;stroke-width:0.5;" x1="149.5" x2="408.5" y1="33.4883" y2="33.4883"/><line style="stroke:#181818;stroke-width:0.5;" x1="149.5" x2="408.5" y1="41.4883" y2="41.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="249" x="154.5" y="59.0234">+findAllReviews(string sku): Product</text></g><!--MD5=[0b56730ea20f38f13e8afabab30647d3]
+class ReviewService--><g id="elem_ReviewService"><rect codeLine="11" fill="#F1F1F1" height="58.9766" id="ReviewService" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="261" x="148.5" y="143"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="95" x="231.5" y="161.5352">ReviewService</text><line style="stroke:#181818;stroke-width:0.5;" x1="149.5" x2="408.5" y1="169.4883" y2="169.4883"/><line style="stroke:#181818;stroke-width:0.5;" x1="149.5" x2="408.5" y1="177.4883" y2="177.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="249" x="154.5" y="195.0234">+findAllReviews(string sku): Product</text></g><!--MD5=[646427437b77c51076e5aa1bc572221c]
+class ReviewRepository--><g id="elem_ReviewRepository"><rect codeLine="15" fill="#F1F1F1" height="73.1094" id="ReviewRepository" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="246" x="7" y="279"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="62" x="99" y="295.6016">«interface»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="120" x="70" y="311.668">ReviewRepository</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="252" y1="319.6211" y2="319.6211"/><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="252" y1="327.6211" y2="327.6211"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="234" x="13" y="345.1563">+findAll(string sku): List&lt;Review&gt;</text></g><!--MD5=[f9761e4ec0e5a044b983a0fb01ce84a9]
+class ProductRepository--><g id="elem_ProductRepository"><rect codeLine="20" fill="#F1F1F1" height="73.1094" id="ProductRepository" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="282" x="288" y="279"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="62" x="398" y="295.6016">«interface»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="126" x="366" y="311.668">ProductRepository</text><line style="stroke:#181818;stroke-width:0.5;" x1="289" x2="569" y1="319.6211" y2="319.6211"/><line style="stroke:#181818;stroke-width:0.5;" x1="289" x2="569" y1="327.6211" y2="327.6211"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="270" x="294" y="345.1563">+findBySkuProduct(string sku): Product</text></g><!--MD5=[eb0e8f8ddfdc21c3fdb48447501fec67]
+class Review--><g id="elem_Review"><rect codeLine="24" fill="#F1F1F1" height="124.9297" id="Review" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="80" x="90" y="429"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="106.5" y="447.5352">Review</text><line style="stroke:#181818;stroke-width:0.5;" x1="91" x2="169" y1="455.4883" y2="455.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="96" y="473.0234">-idReview</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="96" y="489.5117">-status</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="96" y="506">-text</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="96" y="522.4883">-rating</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="39" x="96" y="538.9766">-Date</text><line style="stroke:#181818;stroke-width:0.5;" x1="91" x2="169" y1="545.9297" y2="545.9297"/></g><!--MD5=[72136138052d025cffdce3c22fbd185f]
+class Product--><g id="elem_Product"><rect codeLine="32" fill="#F1F1F1" height="108.4414" id="Product" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="97" x="380.5" y="437.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="402.5" y="456.0352">Product</text><line style="stroke:#181818;stroke-width:0.5;" x1="381.5" x2="476.5" y1="463.9883" y2="463.9883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="386.5" y="481.5234">-name</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="386.5" y="498.0117">-description</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="386.5" y="514.5">-SKU</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="386.5" y="530.9883">-barCode</text><line style="stroke:#181818;stroke-width:0.5;" x1="381.5" x2="476.5" y1="537.9414" y2="537.9414"/></g><!--MD5=[d057c3dfebd49e5861f569cf4a1dc708]
+link ReviewController to ReviewService--><g id="link_ReviewController_ReviewService"><path codeLine="39" d="M279,66.25 C279,87.18 279,115.6 279,137.63 " fill="none" id="ReviewController-to-ReviewService" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="279,142.8,283,133.8,279,137.8,275,133.8,279,142.8" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="29" x="280" y="109.5684">uses</text></g><!--MD5=[77607709dce2ff821cf07f5c5fd6624c]
+link ReviewService to ReviewRepository--><g id="link_ReviewService_ReviewRepository"><path codeLine="40" d="M248.85,202.03 C226.57,223.12 195.97,252.07 171.4,275.32 " fill="none" id="ReviewService-to-ReviewRepository" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="167.51,279,176.792,275.707,171.1371,275.5585,171.2856,269.9036,167.51,279" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="29" x="215" y="245.5684">uses</text></g><!--MD5=[6adb8ed78a63ccf95c075ba37fbc77a8]
+link ReviewService to ProductRepository--><g id="link_ReviewService_ProductRepository"><path codeLine="41" d="M309.35,202.03 C331.78,223.12 362.58,252.07 387.32,275.32 " fill="none" id="ReviewService-to-ProductRepository" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="391.23,279,387.4177,269.9189,387.589,275.5732,381.9347,275.7445,391.23,279" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="29" x="360" y="245.5684">uses</text></g><!--MD5=[c5c637c91b919388842e6ccc8b21e26a]
+link ReviewRepository to Review--><g id="link_ReviewRepository_Review"><path codeLine="42" d="M130,352.13 C130,372.74 130,399.34 130,423.7 " fill="none" id="ReviewRepository-to-Review" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="130,428.86,134,419.86,130,423.86,126,419.86,130,428.86" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="47" x="131" y="395.5684">records</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="121.2875" y="372.5769">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22" x="106.7281" y="418.3404">0..*</text></g><!--MD5=[68e4965bc339513f2ae30d33caf3e4dc]
+link ProductRepository to Product--><g id="link_ProductRepository_Product"><path codeLine="43" d="M429,352.13 C429,375.15 429,405.66 429,432.16 " fill="none" id="ProductRepository-to-Product" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="429,437.41,433,428.41,429,432.41,425,428.41,429,437.41" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="47" x="430" y="395.5684">records</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="420.2875" y="372.5769">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22" x="405.5219" y="426.6934">0..*</text></g><!--MD5=[d02462dafbad010655444fc187bdc272]
+@startuml
+'https://plantuml.com/class-diagram
+
+hide circle
+skinparam classAttributeIconSize 0
+
+
+class ReviewController {
+    +findAllReviews(string sku): Product
+}
+
+class ReviewService {
+    +findAllReviews(string sku): Product
+}
+
+interface ReviewRepository <<interface>>{
+    +findAll(string sku): List<Review>
+
+}
+
+interface ProductRepository <<interface>>{
+    +findBySkuProduct(string sku): Product
+   }
+
+class Review {
+    - idReview
+    - status
+    - text
+    - rating
+    - Date
+}
+
+class Product {
+    - name
+    - description
+    - SKU
+    - barCode
+}
+
+ReviewController ..> ReviewService: uses
+ReviewService ..> ReviewRepository: uses
+ReviewService ..> ProductRepository: uses
+ReviewRepository "1" - -> "0..*" Review:  records
+ProductRepository "1" - -> "0..*" Product:  records
+
+@enduml
+
+@startuml
+
+hide circle
+skinparam classAttributeIconSize 0
+
+
+class ReviewController {
+    +findAllReviews(string sku): Product
+}
+
+class ReviewService {
+    +findAllReviews(string sku): Product
+}
+
+interface ReviewRepository <<interface>>{
+    +findAll(string sku): List<Review>
+
+}
+
+interface ProductRepository <<interface>>{
+    +findBySkuProduct(string sku): Product
+   }
+
+class Review {
+    - idReview
+    - status
+    - text
+    - rating
+    - Date
+}
+
+class Product {
+    - name
+    - description
+    - SKU
+    - barCode
+}
+
+ReviewController ..> ReviewService: uses
+ReviewService ..> ReviewRepository: uses
+ReviewService ..> ProductRepository: uses
+ReviewRepository "1" - -> "0..*" Review:  records
+ProductRepository "1" - -> "0..*" Product:  records
+
+@enduml
+
+PlantUML version 1.2022.4(Sat Apr 09 14:29:17 WEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: pt
+Country: PT
+--></g></svg>

@@ -1,0 +1,36 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+hide circle
+skinparam classAttributeIconSize 0
+
+
+class ModeratorController {
+     +findAllReviewsPending: List<ReviewUser>
+}
+
+interface ReviewService <<interface>> {
+     +findAllReviewsPending: List<ReviewUser>
+}
+
+
+interface ReviewRepository <<interface>>{
+    +findAllPending(): List<Review>
+
+}
+
+
+class Review {
+    - idReview
+    - status
+    - text
+    - rating
+    - Date
+}
+
+ModeratorController ..> ReviewService:uses
+ReviewService ..> ReviewRepository: uses
+ReviewRepository ..> Review: records
+
+
+@enduml

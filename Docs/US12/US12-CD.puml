@@ -1,0 +1,36 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+hide circle
+skinparam classAttributeIconSize 0
+
+
+class ProductController {
+    +findAggregateRatingBySku(sku): AggregateRating
+}
+
+interface ProductService <<interface>> {
+    +findAllRates(sku): AggregateRating
+}
+
+
+interface ProductRepository <<interface>>{
+    +findBySkuProduct(sku): Product
+
+}
+
+class Product {
+    - name
+    - designation
+    - description
+    - SKU
+    - barCode
+}
+
+
+ProductController ..> ProductService: uses
+ProductService ..> ProductRepository: uses
+ProductRepository "1" --> "0..*" Product:  records
+
+
+@enduml

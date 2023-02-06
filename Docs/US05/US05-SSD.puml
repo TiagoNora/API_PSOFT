@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autoactivate on
+autonumber
+
+actor "Client" as Client
+participant "API" as API
+
+activate Client
+
+Client -> API: GET /reviews{SKU}
+API --> Client: Return the catalog of reviews sorted in reverse chronological publishing date
+
+
+@enduml

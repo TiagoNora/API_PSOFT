@@ -1,0 +1,18 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autoactivate on
+autonumber
+
+actor "Client" as client
+participant "API" as api
+
+activate client
+
+client -> api: PUT /moderator/review/{idReview}
+api --> client: Return success
+
+
+
+
+@enduml

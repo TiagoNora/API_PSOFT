@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autoactivate on
+autonumber
+
+actor "Client" as Client
+participant "API" as API
+
+activate Client
+
+Client -> API: POST/reviews{SKU}
+API --> Client: informs operation success
+
+
+
+
+
+@enduml

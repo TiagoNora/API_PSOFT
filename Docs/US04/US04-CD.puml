@@ -1,0 +1,50 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+hide circle
+skinparam classAttributeIconSize 0
+
+
+class ReviewsController {
+    +create(ReviewDTO resource,String sku): Result
+}
+
+class ReviewsService  {
+    +create(ReviewDTO resource,String sku): Result
+}
+
+
+interface ReviewsRepository <<interface>>{
+    +save(review): Result
+
+}
+
+interface ProductsRepository <<interface>>{
+    +findBySkuProduct(string sku): Product
+   }
+
+class Review {
+    - idReview
+    - status
+    - text
+    - rating
+    - Date
+}
+class Product {
+    - name
+    - description
+    - SKU
+    - barCode
+}
+
+
+
+ReviewsController ..> ReviewsService: uses
+ReviewsService ..> ReviewsRepository: uses
+ReviewsService ..> ProductsRepository: uses
+ReviewsRepository "1" --> "0..*" Review:  records
+ProductsRepository "1" --> "0..*" Product:  records
+
+
+
+@enduml

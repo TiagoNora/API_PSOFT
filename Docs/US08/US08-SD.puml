@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autoactivate on
+autonumber
+
+actor "Client" as Client
+participant "VotesController" as Ctrl
+participant "voteService:VoteService" as Svc
+participant "productRepository:ProductRepository" as productRepository
+participant "reviewRepository:ReviewRepository" as reviewRepository
+
+activate Client
+
+Client -> Ctrl : GET/votes/{SKU}
+Ctrl -> Svc : voteService.findAllReviewsWithVotes(sku)
+Svc -> productRepository: productRepository.findBySkuProduct(sku);
+productRepository --> Svc: product
+Svc -> reviewRepository: reviewRepository.findAllWithVotes(sku);
+reviewRepository --> Svc: reviews
+Svc -> Svc: product.setReviews(reviews)
+Svc --> Ctrl: product
+Ctrl --> Client: product
+
+@enduml

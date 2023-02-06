@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autoactivate on
+autonumber
+
+actor "Client" as user
+participant "API" as System
+
+activate user
+
+user -> System: GET /reviews/user/{idUser}
+user <-- System: Returns the list of reviews made by the user
+
+
+
+@enduml

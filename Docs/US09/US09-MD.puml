@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/class-diagram
+hide circle
+skinparam classAttributeIconSize 0
+hide methods
+
+class User {
+    - idUser
+    - name
+    - pass
+    - type
+}
+
+class Review {
+    -idReview
+    - pending
+    - text
+    - rating
+    - Date
+}
+
+User "1" -left- "*" Review:  has <
+
+@enduml

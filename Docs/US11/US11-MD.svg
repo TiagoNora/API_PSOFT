@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="401px" preserveAspectRatio="none" style="width:196px;height:401px;background:#FFFFFF;" version="1.1" viewBox="0 0 196 401" width="196px" zoomAndPan="magnify"><defs/><g><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><g id="elem_User"><rect codeLine="8" fill="#F1F1F1" height="106.0469" id="User" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="57" x="7" y="16"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="21" y="35.5332">User</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="63" y1="43.6094" y2="43.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="13" y="62.1426">-idUser</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="13" y="79.752">-name</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="13" y="97.3613">-pass</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="13" y="114.9707">-type</text></g><!--MD5=[eb0e8f8ddfdc21c3fdb48447501fec67]
+class Review--><g id="elem_Review"><rect codeLine="15" fill="#F1F1F1" height="123.6563" id="Review" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="73" x="53" y="271"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="67" y="290.5332">Review</text><line style="stroke:#181818;stroke-width:0.5;" x1="54" x2="125" y1="298.6094" y2="298.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="59" y="317.1426">-idReview</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="59" y="334.752">-status</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27" x="59" y="352.3613">-text</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="41" x="59" y="369.9707">-rating</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="59" y="387.5801">-Date</text></g><!--MD5=[72136138052d025cffdce3c22fbd185f]
+class Product--><g id="elem_Product"><rect codeLine="23" fill="#F1F1F1" height="123.6563" id="Product" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="90" x="99.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="120" y="26.5332">Product</text><line style="stroke:#181818;stroke-width:0.5;" x1="100.5" x2="188.5" y1="34.6094" y2="34.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="105.5" y="53.1426">-name</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="105.5" y="70.752">-designation</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="105.5" y="88.3613">-description</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="105.5" y="105.9707">-SKU</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="105.5" y="123.5801">-barCode</text></g><!--MD5=[6415063213547b35a52066d7b53eb916]
+link User to Review--><g id="link_User_Review"><path codeLine="31" d="M46.23,122.08 C55.06,164.91 67.59,225.68 76.89,270.82 " fill="none" id="User-Review" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#000000" points="68.4906,196.2787,67.4382,205.7309,73.1951,204.5442,68.4906,196.2787" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="78.5" y="206.4951">has</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="40.1563" y="143.4205">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="70.1429" y="260.2408">*</text></g><!--MD5=[418687281c593c8dd812c04f2d15bfcd]
+link Product to Review--><g id="link_Product_Review"><path codeLine="32" d="M131.67,131.1 C122.85,173.13 111.17,228.75 102.35,270.81 " fill="none" id="Product-Review" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#000000" points="123.4731,206.0692,128.2071,197.8206,122.4545,196.6133,123.4731,206.0692" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="133.5" y="206.4951">has</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="124.9933" y="152.3003">*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="98.5467" y="260.2296">*</text></g><!--MD5=[24a6d6ffe51bd2944b1ace42810cdcd9]
+@startuml
+'https://plantuml.com/class-diagram
+hide circle
+skinparam classAttributeIconSize 0
+hide methods
+
+
+
+class User {
+    - idUser
+    - name
+    - pass
+    - type
+}
+
+class Review {
+    - idReview
+    - status
+    - text
+    - rating
+    - Date
+}
+
+class Product {
+    - name
+    - designation
+    - description
+    - SKU
+    - barCode
+}
+
+User "1" - - - "*" Review:  has <
+Product "*" - - - "*" Review:  has >
+
+@enduml
+
+@startuml
+hide circle
+skinparam classAttributeIconSize 0
+hide methods
+
+
+
+class User {
+    - idUser
+    - name
+    - pass
+    - type
+}
+
+class Review {
+    - idReview
+    - status
+    - text
+    - rating
+    - Date
+}
+
+class Product {
+    - name
+    - designation
+    - description
+    - SKU
+    - barCode
+}
+
+User "1" - - - "*" Review:  has <
+Product "*" - - - "*" Review:  has >
+
+@enduml
+
+PlantUML version 1.2022.4(Sat Apr 09 14:29:17 BST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

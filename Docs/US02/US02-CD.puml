@@ -1,0 +1,48 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+
+hide circle
+skinparam classAttributeIconSize 0
+
+
+class ProductsController {
+    +findBySuk(string sku): ProductDetails
+}
+
+class ProductsService  {
+    +findBySuk(string sku): ProductDetails
+}
+
+
+interface ProductsRepository <<interface>>{
+    +findBySuk(string sku): ProductDetails
+
+}
+
+
+class Product {
+    - name
+    - designation
+    - description
+    - SKU
+    - barCode
+}
+
+class Image {
+    - idImage
+    - SKU
+    - path
+}
+
+
+
+ProductsController ..> ProductsService: uses
+ProductsService ..> ProductsRepository: uses
+ProductsRepository "1" --> "0..*" Product:  records
+Product "*" -right-> "*" Image: has
+
+
+
+@enduml

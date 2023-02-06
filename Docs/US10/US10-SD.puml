@@ -1,0 +1,29 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+autoactivate on
+autonumber
+
+actor "Client" as client
+participant "ModeratorController" as controller
+participant "reviewService:ReviewService" as service
+participant "reviewRepository:ReviewRepository" as repository
+
+activate client
+
+client -> controller: PUT /moderator/review/{idReview}
+controller -> service : reviewService.changeStatus(idReview,resource)
+service -> repository: reviewRepository.findByIdReview(idReview);
+repository --> service: review
+alt resource.getApproved() == true
+service --> service: review.setStatus("APPROVED")
+else resource.getApproved() == true
+service --> service: review.setStatus("REJECTED")
+end
+service -> repository: save(review)
+repository -> service: review
+service -> controller: review
+controller -> client: review
+
+@enduml

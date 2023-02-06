@@ -1,0 +1,38 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+
+hide circle
+skinparam classAttributeIconSize 0
+
+class ModeratorController {
+     +changeStatus(idReview, ChangeStatus resource): Review
+}
+
+interface ReviewService <<interface>> {
+     +changeStatus(idReview, ChangeStatus resource): Review
+}
+
+
+interface ReviewRepository <<interface>>{
+    +findByIdReview(idReview): Review
+    +save(review): Success
+}
+
+
+class Review {
+    - idReview
+    - status
+    - text
+    - rating
+    - Date
+}
+
+ModeratorController ..> ReviewService:uses
+ReviewService ..> ReviewRepository: uses
+ReviewRepository ..> Review: records
+
+
+
+@enduml

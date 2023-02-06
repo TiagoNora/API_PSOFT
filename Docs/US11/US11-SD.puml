@@ -1,0 +1,49 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+autoactivate on
+autonumber
+
+actor "Client" as Client
+participant "ReviewController" as Ctrl
+participant "reviewService:ReviewService" as service
+participant "reviewRepository:ReviewRepository" as Repo
+participant "review:Review" as review
+participant "reviewUser:ReviewUser" as reviewUser
+
+activate Client
+
+Client -> Ctrl : GET /reviews/user/{idUser}
+Ctrl -> service : reviewService.findAllReviewsByUser(idUser)
+service -> Repo: reviewRepository.findAllReviewsByUser(idUser);
+Repo --> service: reviews
+loop for each "review" in reviews
+    service -> review: getId()
+    review --> service: id
+    service -> review: getSku()
+    review --> service: sku
+    service -> review: getStatus()
+    review --> service: status
+    service -> review: getText()
+    review --> service: text
+    service -> review: getRating()
+    review --> service: rating
+    service -> review: getTotalVotes()
+    review --> service: totalVotes
+    service -> review: getUpVotes()
+    review --> service: upVotes
+    service -> review: getDownVotes()
+    review --> service: downVotes
+    service -> review: getCreationDateTime()
+    review --> service: creationDateTime
+    service -> review: getFunFact()
+    review --> service: funFact
+    service -> reviewUser**: new ReviewUser(id,sku,status,text,rating,totalVotes,upVotes,downVotes,creationDateTime,funFact)
+    reviewUser --> service: reviewUser
+    service -> service: reviewsUser.add(reviewUser);
+end loop
+service --> Ctrl: reviewsUser
+Ctrl --> Client: list of reviews
+
+@enduml

@@ -1,0 +1,41 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+hide circle
+skinparam classAttributeIconSize 0
+hide methods
+
+class Product {
+    - name
+    - description
+    - SKU
+    - barCode
+}
+
+class Image {
+    - idImage
+    - SKU
+    - path
+}
+
+class User {
+    - idUser
+    - name
+    - pass
+    - type
+}
+
+class Review {
+    - idReview
+    - status
+    - text
+    - rating
+    - Date
+}
+
+
+User "1" --- "*" Review:  has <
+Product "*" --- "*" Review:  has >
+Product "*" --- "*" Image: has >
+
+@enduml

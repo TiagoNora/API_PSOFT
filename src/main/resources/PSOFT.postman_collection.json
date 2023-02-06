@@ -1,0 +1,630 @@
+{
+	"info": {
+		"_postman_id": "1f8d991d-1e2f-468d-a60b-a8a0100225cb",
+		"name": "PSOFT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17818651"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Get catalog of products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8086/products?pageNo=0&pageSize=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "pageSize",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get details of a product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8086/products/cBKhdYE37I64",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"products",
+								"cBKhdYE37I64"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get catalog of products search for sku",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8086/products/search/c?pageNo=0&pageSize=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"products",
+								"search",
+								"c"
+							],
+							"query": [
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "pageSize",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get catalog of products search for name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8086/products/search/BOLACHA?pageNo=0&pageSize=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"products",
+								"search",
+								"BOLACHA"
+							],
+							"query": [
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "pageSize",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get rating of a product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8086/products/cBKhdYE37I64/rating",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"products",
+								"cBKhdYE37I64",
+								"rating"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reviews",
+			"item": [
+				{
+					"name": "Review a product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"text\": \"string\",\r\n  \"rating\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8086/reviews/cBKhdYE37I64",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"reviews",
+								"cBKhdYE37I64"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get reviews of a product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8086/reviews/cBKhdYE37I64?pageNo=0&pageSize=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"reviews",
+								"cBKhdYE37I64"
+							],
+							"query": [
+								{
+									"key": "pageNo",
+									"value": "0"
+								},
+								{
+									"key": "pageSize",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a review",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "localhost:8086/reviews/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"reviews",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Gets all reviews that the user made",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "localhost:8086/reviews/user?pageNo=0&pageSize=5",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"reviews",
+								"user"
+							],
+							"query": [
+								{
+									"key": "pageNo",
+									"value": "0",
+									"description": "(Required) "
+								},
+								{
+									"key": "pageSize",
+									"value": "5",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Signin the user",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);\r",
+									"pm.collectionVariables.set(\"token\", jsonData[\"accessToken\"]);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"Tiago\",\n  \"password\": \"aaaa\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8086/api/auth/signin",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"api",
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Votes",
+			"item": [
+				{
+					"name": "Make a vote in a review",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"vote\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8086/votes/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"votes",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all reviews order by total votes ",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "localhost:8086/votes/cBKhdYE37I64?pageNo=0&pageSize=5",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"votes",
+								"cBKhdYE37I64"
+							],
+							"query": [
+								{
+									"key": "pageNo",
+									"value": "0",
+									"description": "(Required) "
+								},
+								{
+									"key": "pageSize",
+									"value": "5",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Images",
+			"item": [
+				{
+					"name": "Upload image to product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/tiago/OneDrive/Ambiente de Trabalho/Imagens/94911ef404acb12bfc1f9191cf005ac861b8a3ae_full.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8086/images/uploadFile/cBKhdYE37I64",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"images",
+								"uploadFile",
+								"cBKhdYE37I64"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Download image from product",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "localhost:8086/images/downloadFile/:fileName",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"images",
+								"downloadFile",
+								":fileName"
+							],
+							"variable": [
+								{
+									"key": "fileName",
+									"value": "Excepteur se",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get bar code",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "image/png"
+							}
+						],
+						"url": {
+							"raw": "localhost:8086/images/barcode/cBKhdYE37I64",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"images",
+								"barcode",
+								"cBKhdYE37I64"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Moderator",
+			"item": [
+				{
+					"name": "Change the status of the review",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"approved\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8086/moderator/review/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"moderator",
+								"review",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all pending reviews",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "localhost:8086/moderator/reviews?pageNo=0&pageSize=5",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"moderator",
+								"reviews"
+							],
+							"query": [
+								{
+									"key": "pageNo",
+									"value": "0",
+									"description": "(Required) "
+								},
+								{
+									"key": "pageSize",
+									"value": "5",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "0",
+			"type": "string"
+		}
+	]
+}

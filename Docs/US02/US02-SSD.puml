@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autoactivate on
+autonumber
+
+actor "Client" as client
+participant "API" as api
+
+activate client
+
+client -> api: GET /products/{sku}
+api --> client: Return the details of the given product
+
+
+
+@enduml

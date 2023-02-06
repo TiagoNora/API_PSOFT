@@ -1,0 +1,42 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+autoactivate on
+autonumber
+
+actor "Client" as User
+participant "VotesController" as Ctrl
+participant "votesService:VotesService" as service
+participant "reviewRepository:ProductRepository" as reviewRepo
+participant "userRepository:UserRepository" as userRepo
+participant "vote:Vote" as vote
+participant "voteRepository:VoteRepository" as voteRepo
+
+
+
+
+activate User
+User -> Ctrl : POST /votes/{idReview}/{idUser}
+Ctrl -> service : service.create(resource,idReview,idUser);
+service -> reviewRepo: repository.findByIdReview(idReview)
+reviewRepo --> service: review
+service -> userRepo: repository.findByIdReview(idUser)
+userRepo --> service: user
+service -> service: review.setTotalVotes(review.getTotalVotes()+1)
+alt resource.getVote() == true
+    service -> service: review.setUpVotes(review.getUpVotes()+1)
+else resource.getVote() == false
+    service -> service:review.setDownVotes(review.getDownVotes()+1);
+end
+service -> vote**: new()
+service -> vote: setVote(resource.getVote());
+service -> vote: setUser(user);
+service -> vote: setReview(review)
+vote --> service: vote
+service -> voteRepo: save(vote)
+voteRepo --> service: ok
+service --> Ctrl: ok
+Ctrl --> User: ok
+
+@enduml

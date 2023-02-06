@@ -1,0 +1,41 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+autoactivate on
+autonumber
+
+actor "Client" as client
+participant "ProductsController" as controller
+participant "productService:ProductsService" as service
+participant "productRepo:ProductsRepository" as repository
+participant "productDetails:ProductDetails" as details
+participant "product:Product" as product
+
+activate client
+
+client -> controller: GET /products/search/{skuOrName}
+controller -> service : productService.findByNameOrSuk(skuOrName)
+service -> repository: productRepo.findByNameOrSuk(skuOrName)
+repository --> service: list
+loop for each 'product' in 'list'
+    service -> product: getSku()
+    product --> service: sku
+    service -> product: getName()
+    product --> service: name
+    service -> product: getDescription()
+    product --> service: description
+    service -> product: getImages()
+    product --> service: images
+    service -> details**: new()
+    service -> details: setSku(sku)
+    service -> details: setName(name)
+    service -> details: setDescription(description)
+    service -> details: setImages(images)
+    details --> service: listOfProductDetails.add(productDetails)
+end loop
+service --> controller: listOfProductDetails
+controller --> client: listOfProductDetails
+
+
+@enduml

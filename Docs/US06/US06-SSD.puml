@@ -1,0 +1,18 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autoactivate on
+autonumber
+
+actor "ACME user" as user
+participant "API" as System
+
+activate user
+
+user -> System: POST /votes/{idReview}/{idUser}
+
+user <-- System: informs operation success
+
+
+
+@enduml

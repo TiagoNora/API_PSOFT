@@ -1,0 +1,28 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autoactivate on
+autonumber
+
+actor "Client" as Client
+
+participant "ReviewController" as CtrlR
+participant "reviewService:ReviewService" as SvcR
+participant "productRepo:ProductRepository" as RepoP
+participant "reviewRepo:ReviewRepository" as RepoR
+
+activate Client
+
+Client -> CtrlR : GET/reviews{SKU}
+CtrlR -> SvcR : reviewService.findAllReviews(sku)
+SvcR -> RepoP: productRepo.findBySkuProduct(sku)
+RepoP --> SvcR: product
+SvcR -> RepoR: reviewRepo.findAll(sku)
+RepoR --> SvcR: reviews
+SvcR -> SvcR: product.setReviews(reviews)
+SvcR --> CtrlR: product with reviews
+CtrlR --> "Client": product with reviews
+
+
+
+@enduml

@@ -1,0 +1,33 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autoactivate on
+autonumber
+
+actor "ACME" as User
+participant "ReviewController" as Ctrl
+participant "reviewService:ReviewService" as Svc
+participant "productRepo:ProductRepository" as repository
+participant "reviewDTO:ReviewDTO" as reviewDTO
+participant "review:Review" as review
+participant "reviewRepo:ReviewRepository" as Repo
+
+activate User
+
+User -> Ctrl : POST/reviews{SKU}
+
+Ctrl -> Svc : create(ReviewDTO, sku)
+Svc -> repository : productRepo.findBySkuProduct(sku);
+repository --> Svc : product
+Svc -> reviewDTO : getText()
+reviewDTO --> Svc : text
+Svc -> reviewDTO : getRating()
+reviewDTO --> Svc : rating
+Svc -> review** : create(text,rating)
+review --> Svc :  review
+Svc -> Repo : reviewRepo.save(review)
+Repo --> Svc : ok
+Svc --> Ctrl : ok
+Ctrl --> User : ok
+
+@enduml

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="120px" preserveAspectRatio="none" style="width:237px;height:120px;background:#FFFFFF;" version="1.1" viewBox="0 0 237 120" width="237px" zoomAndPan="magnify"><defs/><g><!--MD5=[72136138052d025cffdce3c22fbd185f]
+class Product--><g id="elem_Product"><rect codeLine="6" fill="#F1F1F1" height="106.0469" id="Product" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="86" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="25.5" y="26.5332">Product</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="92" y1="34.6094" y2="34.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="13" y="53.1426">-name</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="13" y="70.752">-description</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="13" y="88.3613">-SKU</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="13" y="105.9707">-barCode</text></g><!--MD5=[964f074a2dd77d134c21b891bb53e381]
+class Image--><g id="elem_Image"><rect codeLine="13" fill="#F1F1F1" height="88.4375" id="Image" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="66" x="164" y="16"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="178" y="35.5332">Image</text><line style="stroke:#181818;stroke-width:0.5;" x1="165" x2="229" y1="43.6094" y2="43.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="170" y="62.1426">-idImage</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="170" y="79.752">-SKU</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="33" x="170" y="97.3613">-path</text></g><!--MD5=[36b69398912f1cff2510a1764d3175d7]
+link Product to Image--><g id="link_Product_Image"><path codeLine="19" d="M93.31,60 C115.84,60 142.94,60 163.79,60 " fill="none" id="Product-Image" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#000000" points="120.5,48.1758,111.4549,45.2369,111.4549,51.1147,120.5,48.1758" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="124.5" y="53.4951">has</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="100.8973" y="56.1953">*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="150.9784" y="55.7357">*</text></g><!--MD5=[dbd6722ad1295540b4b5290160a25697]
+@startuml
+'https://plantuml.com/class-diagram
+hide circle
+skinparam classAttributeIconSize 0
+hide methods
+
+class Product {
+    - name
+    - description
+    - SKU
+    - barCode
+}
+
+class Image {
+    - idImage
+    - SKU
+    - path
+}
+
+Product "*" -right- "*" Image: has >
+
+@enduml
+
+@startuml
+hide circle
+skinparam classAttributeIconSize 0
+hide methods
+
+class Product {
+    - name
+    - description
+    - SKU
+    - barCode
+}
+
+class Image {
+    - idImage
+    - SKU
+    - path
+}
+
+Product "*" -right- "*" Image: has >
+
+@enduml
+
+PlantUML version 1.2022.4(Sat Apr 09 14:29:17 BST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

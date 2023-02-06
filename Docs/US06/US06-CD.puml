@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+hide circle
+skinparam classAttributeIconSize 0
+
+
+class VotesController {
+    +create(VoteDTO resource, int idReview): Result
+}
+
+interface VotesService <<interface>> {
+    +create(VoteDTO resource, int idReview): Result
+}
+
+interface VotesRepository <<interface>>{
+    +save(vote): Result
+
+}
+
+class Vote {
+    - idVote
+    - vote
+}
+
+VotesController ..> VotesService: uses
+VotesService --> VotesRepository: uses
+VotesRepository "1" --> "0..*" Vote:  records
+
+
+@enduml

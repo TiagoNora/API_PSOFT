@@ -1,0 +1,58 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+left to right direction
+
+
+:Anonymous Customer: as aCostumer
+:Registered Customer: as rCostumer
+:Moderator: as moderator
+
+
+(US01  - To obtain the catalog of products) as US01
+(US02  - To obtain the details of a product) as US02
+(US03  - To search the catalog of products by product name or bar code) as US03
+(US04  - To review and rate a product) as US04
+(US05  - To obtain the reviews of a product) as US05
+(US06  - To vote for a review) as US06
+(US07  - To withdraw one of my reviews) as US07
+(US08  - To obtain the reviews of a product) as US08
+(US09  - To obtain all pending reviews) as US09
+(US10  - To approve/reject a pending review) as US10
+(US11  - To obtain all my reviews) as US11
+(US12  - To obtain the aggregated rating of a product) as US12
+
+'package 1'
+aCostumer --> US01
+aCostumer --> US02
+aCostumer --> US03
+
+rCostumer --> US01
+rCostumer --> US02
+rCostumer --> US03
+
+'package 2'
+rCostumer --> US04
+rCostumer --> US05
+aCostumer --> US05
+
+'package 3'
+rCostumer --> US06
+rCostumer --> US07
+rCostumer --> US08
+aCostumer --> US08
+
+'package 4'
+moderator --> US09
+moderator --> US10
+rCostumer --> US11
+
+'package 5'
+aCostumer --> US12
+rCostumer --> US12
+
+
+
+
+
+@enduml

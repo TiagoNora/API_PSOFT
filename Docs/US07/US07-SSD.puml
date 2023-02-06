@@ -1,0 +1,18 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autoactivate on
+autonumber
+
+actor "Client" as User
+participant "API" as System
+
+activate User
+
+User -> System: DELETE /review/{idReview}
+System --> User: informs operation success
+
+
+
+
+@enduml

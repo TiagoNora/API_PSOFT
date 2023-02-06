@@ -1,0 +1,34 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+hide circle
+skinparam classAttributeIconSize 0
+
+
+class ReviewController {
+    +delete(int id): Result
+}
+
+interface ReviewService <<interface>> {
+    +deleteById(int idReview): Result
+}
+
+interface ReviewRepository <<interface>>{
+    +delete(int id): Result
+
+}
+
+class Review {
+    - idReview
+    - pending
+    - text
+    - rating
+    - Date
+}
+
+ReviewController ..> ReviewService: uses
+ReviewService ..> ReviewRepository: uses
+ReviewRepository "1" --> "0..*" Review:  deletes
+
+@enduml

@@ -1,0 +1,36 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+hide circle
+skinparam classAttributeIconSize 0
+
+
+class ReviewController {
+    +findAllReviewsByUser: List<ReviewUser>
+}
+
+interface ReviewService <<interface>> {
+    +findAllReviewsByUser: List<ReviewUser>
+}
+
+
+
+interface ReviewRepository <<interface>>{
+    +findAllReviewsByUser(idUser): List<Review>
+
+}
+
+class Review {
+    - idReview
+    - status
+    - text
+    - rating
+    - Date
+}
+
+
+ReviewController ..> ReviewService: uses
+ReviewService ..> ReviewRepository: uses
+ReviewRepository "1" --> "0..*" Review:  records
+
+@enduml

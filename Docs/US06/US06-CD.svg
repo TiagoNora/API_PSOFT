@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="525px" preserveAspectRatio="none" style="width:354px;height:525px;background:#FFFFFF;" version="1.1" viewBox="0 0 354 525" width="354px" zoomAndPan="magnify"><defs/><g><!--MD5=[297b8a1774268db85658dd6d47e42e12]
+class VotesController--><g id="elem_VotesController"><rect codeLine="8" fill="#F1F1F1" height="58.9766" id="VotesController" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="340" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="123" y="25.5352">VotesController</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="346" y1="33.4883" y2="33.4883"/><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="346" y1="41.4883" y2="41.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="328" x="13" y="59.0234">+create(VoteDTO resource, int idReview): Result</text></g><!--MD5=[3902d30fb0d86c9d7a2e20b299b4f0d9]
+class VotesService--><g id="elem_VotesService"><rect codeLine="12" fill="#F1F1F1" height="73.1094" id="VotesService" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="340" x="7" y="143"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="62" x="146" y="159.6016">«interface»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="86" x="134" y="175.668">VotesService</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="346" y1="183.6211" y2="183.6211"/><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="346" y1="191.6211" y2="191.6211"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="328" x="13" y="209.1563">+create(VoteDTO resource, int idReview): Result</text></g><!--MD5=[53a60746d680f57c9b46f494b8c12ac1]
+class VotesRepository--><g id="elem_VotesRepository"><rect codeLine="16" fill="#F1F1F1" height="73.1094" id="VotesRepository" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="142" x="106" y="293"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="62" x="146" y="309.6016">«interface»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="111" x="121.5" y="325.668">VotesRepository</text><line style="stroke:#181818;stroke-width:0.5;" x1="107" x2="247" y1="333.6211" y2="333.6211"/><line style="stroke:#181818;stroke-width:0.5;" x1="107" x2="247" y1="341.6211" y2="341.6211"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="130" x="112" y="359.1563">+save(vote): Result</text></g><!--MD5=[6987bc66bd8845192e2addfb47d98466]
+class Vote--><g id="elem_Vote"><rect codeLine="21" fill="#F1F1F1" height="75.4648" id="Vote" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="64" x="145" y="443"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="161.5" y="461.5352">Vote</text><line style="stroke:#181818;stroke-width:0.5;" x1="146" x2="208" y1="469.4883" y2="469.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52" x="151" y="487.0234">-idVote</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="151" y="503.5117">-vote</text><line style="stroke:#181818;stroke-width:0.5;" x1="146" x2="208" y1="510.4648" y2="510.4648"/></g><!--MD5=[694e7289b36192c14b720504eecb5b6b]
+link VotesController to VotesService--><g id="link_VotesController_VotesService"><path codeLine="26" d="M177,66.03 C177,86.68 177,114.88 177,137.88 " fill="none" id="VotesController-to-VotesService" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="177,143,181,134,177,138,173,134,177,143" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="29" x="178" y="109.5684">uses</text></g><!--MD5=[72146e7599643df61baaed8523b65da4]
+link VotesService to VotesRepository--><g id="link_VotesService_VotesRepository"><path codeLine="27" d="M177,216.33 C177,237.79 177,265.15 177,287.48 " fill="none" id="VotesService-to-VotesRepository" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="177,292.75,181,283.75,177,287.75,173,283.75,177,292.75" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="29" x="178" y="259.5684">uses</text></g><!--MD5=[05eae792f8dcd7a2e819ed144d4fbcb7]
+link VotesRepository to Vote--><g id="link_VotesRepository_Vote"><path codeLine="28" d="M177,366.19 C177,387.72 177,415.25 177,437.78 " fill="none" id="VotesRepository-to-Vote" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="177,442.81,181,433.81,177,437.81,173,433.81,177,442.81" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="47" x="178" y="409.5684">records</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="168.2875" y="386.6476">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22" x="153.0406" y="432.3151">0..*</text></g><!--MD5=[29b74fdc43cace25a972f3f404e2d702]
+@startuml
+'https://plantuml.com/class-diagram
+
+
+hide circle
+skinparam classAttributeIconSize 0
+
+
+class VotesController {
+    +create(VoteDTO resource, int idReview): Result
+}
+
+interface VotesService <<interface>> {
+    +create(VoteDTO resource, int idReview): Result
+}
+
+interface VotesRepository <<interface>>{
+    +save(vote): Result
+
+}
+
+class Vote {
+    - idVote
+    - vote
+}
+
+VotesController ..> VotesService: uses
+VotesService - -> VotesRepository: uses
+VotesRepository "1" - -> "0..*" Vote:  records
+
+
+@enduml
+
+@startuml
+
+
+hide circle
+skinparam classAttributeIconSize 0
+
+
+class VotesController {
+    +create(VoteDTO resource, int idReview): Result
+}
+
+interface VotesService <<interface>> {
+    +create(VoteDTO resource, int idReview): Result
+}
+
+interface VotesRepository <<interface>>{
+    +save(vote): Result
+
+}
+
+class Vote {
+    - idVote
+    - vote
+}
+
+VotesController ..> VotesService: uses
+VotesService - -> VotesRepository: uses
+VotesRepository "1" - -> "0..*" Vote:  records
+
+
+@enduml
+
+PlantUML version 1.2022.4(Sat Apr 09 14:29:17 WEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: pt
+Country: PT
+--></g></svg>

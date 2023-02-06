@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Upload files</title>
+</head>
+<body>
+<h1 style="text-align:center">Upload files to products</h1>
+<div style="text-align:center">
+    <label for="skuName">Sku of the product<br><br></label>
+    <input id="skuName" name="skuName"><br><br>
+    <label for="token">Token of the moderator<br><br></label>
+    <input id="token" name="token"><br><br>
+    <label for="fileupload">Select a file<br><br></label>
+    <input id="fileupload" type="file" name="fileupload" ><br><br>
+    <button type="button" onclick="uploadFile()">Add file to product</button>
+
+</div>
+
+<script>
+    async function uploadFile() {
+        let formData = new FormData();
+        formData.append("file", document.getElementById("fileupload").files[0]);
+        let response = await fetch('/images/uploadFile/'+ document.getElementById("skuName").value, {
+            method: "POST",
+            body: formData,
+            headers: {
+                'Authorization': 'Bearer ' + document.getElementById("token").value
+            },
+        });
+
+        if (response.status == 200) {
+            alert("File successfully uploaded.");
+        }
+    }
+</script>
+
+</body>
+</html>
+
+

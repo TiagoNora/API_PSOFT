@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="574px" preserveAspectRatio="none" style="width:249px;height:574px;background:#FFFFFF;" version="1.1" viewBox="0 0 249 574" width="249px" zoomAndPan="magnify"><defs/><g><!--MD5=[ee6344d516906ecc8b439ac61d539e0d]
+class ReviewController--><g id="elem_ReviewController"><rect codeLine="8" fill="#F1F1F1" height="58.9766" id="ReviewController" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="160" x="44.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="66" y="25.5352">ReviewController</text><line style="stroke:#181818;stroke-width:0.5;" x1="45.5" x2="203.5" y1="33.4883" y2="33.4883"/><line style="stroke:#181818;stroke-width:0.5;" x1="45.5" x2="203.5" y1="41.4883" y2="41.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="148" x="50.5" y="59.0234">+delete(int id): Result</text></g><!--MD5=[0b56730ea20f38f13e8afabab30647d3]
+class ReviewService--><g id="elem_ReviewService"><rect codeLine="12" fill="#F1F1F1" height="73.1094" id="ReviewService" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="235" x="7" y="143"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="62" x="93.5" y="159.6016">«interface»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="95" x="77" y="175.668">ReviewService</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="241" y1="183.6211" y2="183.6211"/><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="241" y1="191.6211" y2="191.6211"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="223" x="13" y="209.1563">+deleteById(int idReview): Result</text></g><!--MD5=[646427437b77c51076e5aa1bc572221c]
+class ReviewRepository--><g id="elem_ReviewRepository"><rect codeLine="16" fill="#F1F1F1" height="73.1094" id="ReviewRepository" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="160" x="44.5" y="293"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="62" x="93.5" y="309.6016">«interface»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="120" x="64.5" y="325.668">ReviewRepository</text><line style="stroke:#181818;stroke-width:0.5;" x1="45.5" x2="203.5" y1="333.6211" y2="333.6211"/><line style="stroke:#181818;stroke-width:0.5;" x1="45.5" x2="203.5" y1="341.6211" y2="341.6211"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="148" x="50.5" y="359.1563">+delete(int id): Result</text></g><!--MD5=[eb0e8f8ddfdc21c3fdb48447501fec67]
+class Review--><g id="elem_Review"><rect codeLine="21" fill="#F1F1F1" height="124.9297" id="Review" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="80" x="84.5" y="443"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="101" y="461.5352">Review</text><line style="stroke:#181818;stroke-width:0.5;" x1="85.5" x2="163.5" y1="469.4883" y2="469.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="90.5" y="487.0234">-idReview</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="90.5" y="503.5117">-pending</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="90.5" y="520">-text</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="90.5" y="536.4883">-rating</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="39" x="90.5" y="552.9766">-Date</text><line style="stroke:#181818;stroke-width:0.5;" x1="85.5" x2="163.5" y1="559.9297" y2="559.9297"/></g><!--MD5=[d057c3dfebd49e5861f569cf4a1dc708]
+link ReviewController to ReviewService--><g id="link_ReviewController_ReviewService"><path codeLine="29" d="M124.5,66.03 C124.5,86.68 124.5,114.88 124.5,137.88 " fill="none" id="ReviewController-to-ReviewService" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="124.5,143,128.5,134,124.5,138,120.5,134,124.5,143" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="29" x="125.5" y="109.5684">uses</text></g><!--MD5=[77607709dce2ff821cf07f5c5fd6624c]
+link ReviewService to ReviewRepository--><g id="link_ReviewService_ReviewRepository"><path codeLine="30" d="M124.5,216.33 C124.5,237.79 124.5,265.15 124.5,287.48 " fill="none" id="ReviewService-to-ReviewRepository" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="124.5,292.75,128.5,283.75,124.5,287.75,120.5,283.75,124.5,292.75" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="29" x="125.5" y="259.5684">uses</text></g><!--MD5=[c5c637c91b919388842e6ccc8b21e26a]
+link ReviewRepository to Review--><g id="link_ReviewRepository_Review"><path codeLine="31" d="M124.5,366.13 C124.5,386.74 124.5,413.34 124.5,437.7 " fill="none" id="ReviewRepository-to-Review" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="124.5,442.86,128.5,433.86,124.5,437.86,120.5,433.86,124.5,442.86" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="45" x="125.5" y="409.5684">deletes</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="115.7875" y="386.5769">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22" x="101.2281" y="432.3404">0..*</text></g><!--MD5=[a08742bc8facbd2d438a8efd0cc42b5a]
+@startuml
+'https://plantuml.com/class-diagram
+
+
+hide circle
+skinparam classAttributeIconSize 0
+
+
+class ReviewController {
+    +delete(int id): Result
+}
+
+interface ReviewService <<interface>> {
+    +deleteById(int idReview): Result
+}
+
+interface ReviewRepository <<interface>>{
+    +delete(int id): Result
+
+}
+
+class Review {
+    - idReview
+    - pending
+    - text
+    - rating
+    - Date
+}
+
+ReviewController ..> ReviewService: uses
+ReviewService ..> ReviewRepository: uses
+ReviewRepository "1" - -> "0..*" Review:  deletes
+
+@enduml
+
+@startuml
+
+
+hide circle
+skinparam classAttributeIconSize 0
+
+
+class ReviewController {
+    +delete(int id): Result
+}
+
+interface ReviewService <<interface>> {
+    +deleteById(int idReview): Result
+}
+
+interface ReviewRepository <<interface>>{
+    +delete(int id): Result
+
+}
+
+class Review {
+    - idReview
+    - pending
+    - text
+    - rating
+    - Date
+}
+
+ReviewController ..> ReviewService: uses
+ReviewService ..> ReviewRepository: uses
+ReviewRepository "1" - -> "0..*" Review:  deletes
+
+@enduml
+
+PlantUML version 1.2022.4(Sat Apr 09 14:29:17 WEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: pt
+Country: PT
+--></g></svg>
